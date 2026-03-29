@@ -7,7 +7,7 @@ basic:
   title: Backend Developer           # job title
   avatar:
     show: true                       # show or hide avatar
-    path: /assets/images/profile.png # file path or link to your avatar
+    path: /assets/images/profile.jpg # file path or link to your avatar
 
 contact:
   location: Beijing, China  # location, text or markdown link syntax
