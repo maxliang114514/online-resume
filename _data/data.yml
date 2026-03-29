@@ -67,8 +67,8 @@ project:
       link:
       date: 2023.09 - 2024.09
       description: |
-        研究并改进区块链共识协议 (如 PBFT) 的激励机制，以提升网络的安全性与稳定性。（文章标题：Three-party evolutionary game-based analysis and stability enhancement of improved PBFT consensus mechanism）
-        + 成果已发表于 SCI 期刊《Cluster Computing》(JCR Q2)。
+        研究并改进区块链共识协议 (如 PBFT) 的激励机制，以提升网络的安全性与稳定性。
+        + 成果已发表于 SCI 期刊《Cluster Computing》(JCR Q2)（文章标题：Three-party evolutionary game-based analysis and stability enhancement of improved PBFT consensus mechanism）。
         + 参与“区块链+博弈”讨论班 (邓小铁教授主持)，研讨自私挖矿攻击等课题。
 
 award:
