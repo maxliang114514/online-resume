@@ -46,7 +46,7 @@ project:
   order: 3
   title: 项目经历
   items:
-    - name: CoT在训练和推理阶段的应用对于大模型组合泛化的影响机制
+    - name: CoT在训练和推理阶段的应用对于大模型组合泛化的影响机制研究
       link:
       date: 2025.05 - 至今
       description: |
