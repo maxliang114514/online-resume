@@ -4,7 +4,7 @@ meta:
 
 basic:
   name: 梁诺靖
-  title: AI / 机器学习研究
+  title: AI / ML / LLM / CoT
   avatar:
     show: true
     path: /assets/images/profile.png # 请将您的照片放入此路径或替换为您的链接
@@ -70,16 +70,6 @@ project:
         研究并改进区块链共识协议 (如 PBFT) 的激励机制，以提升网络的安全性与稳定性。
         + 成果已发表于 SCI 期刊《Cluster Computing》(JCR Q2)。
         + 参与“区块链+博弈”讨论班 (邓小铁教授主持)，研讨自私挖矿攻击等课题。
-
-publication:
-  show: true
-  order: 3
-  title: 学术发表
-  items:
-    - title: Three-party evolutionary game-based analysis and stability enhancement of improved PBFT consensus mechanism
-      conference: Cluster Computing (SCI JCR Q2)
-      link:
-      description: 已发表
 
 award:
   show: true
