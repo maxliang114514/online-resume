@@ -25,10 +25,10 @@ education:
     - institution: 南京大学智能科学与技术学院
       link:
       date: 2025.07 - 至今
-      major: 机器学习与数据挖掘
+      major: 机器学习与数据挖掘（导师：袁晓彤教授）
       degree: 硕士（在读）
       description: |
-        导师：袁晓彤教授
+        
         + 研究方向：模型高效微调、机器学习理论、CoT(思维链)、组合泛化
         + 具体内容：CoT在训练和推理阶段的应用对于大模型组合泛化的影响机制
 
@@ -67,7 +67,7 @@ project:
       link:
       date: 2023.09 - 2024.09
       description: |
-        研究并改进区块链共识协议 (如 PBFT) 的激励机制，以提升网络的安全性与稳定性。
+        研究并改进区块链共识协议 (如 PBFT) 的激励机制，以提升网络的安全性与稳定性。（文章标题：Three-party evolutionary game-based analysis and stability enhancement of improved PBFT consensus mechanism）
         + 成果已发表于 SCI 期刊《Cluster Computing》(JCR Q2)。
         + 参与“区块链+博弈”讨论班 (邓小铁教授主持)，研讨自私挖矿攻击等课题。
 
