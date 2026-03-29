@@ -59,17 +59,17 @@ project:
       link:
       date: 2024.11 - 2025.05
       description: |
-        结合Q-LoRA与VeRA的优势，对高效大语言模型微调方法进行了改进。
-        + 在 MMLU、GLUE 等主流测试集上性能与基线模型相当。
-        + 显著优化了微调阶段的内存占用。
+        结合Q-LoRA与VeRA的优势，对高效大语言模型微调方法进行了改进
+        + 在 MMLU、GLUE 等主流测试集上性能与基线相当
+        + 显著优化了微调阶段的内存占用
 
     - name: “区块链+三方演化博弈”课题研究
       link:
       date: 2023.09 - 2024.09
       description: |
         研究并改进区块链共识协议 (如 PBFT) 的激励机制，以提升网络的安全性与稳定性。
-        + 成果已发表于 SCI 期刊《Cluster Computing》(JCR Q2)（文章标题：Three-party evolutionary game-based analysis and stability enhancement of improved PBFT consensus mechanism）。
-        + 参与“区块链+博弈”讨论班 (邓小铁教授主持)，研讨自私挖矿攻击等课题。
+        + 成果已发表于 SCI 期刊《Cluster Computing》(JCR Q2)（文章标题：Three-party evolutionary game-based analysis and stability enhancement of improved PBFT consensus mechanism）
+        + 参与“区块链+博弈”讨论班 (邓小铁教授主持)，研讨自私挖矿攻击等课题
 
 award:
   show: true
