@@ -7,7 +7,7 @@ basic:
   title: AI / 机器学习研究
   avatar:
     show: true
-    path: /assets/images/profile.png # 请将您的照片放入此路径或替换为您的链接
+    path: /assets/images/profile.jpg # 请将您的照片放入此路径或替换为您的链接
 
 contact:
   location: 苏州/上海，中国
