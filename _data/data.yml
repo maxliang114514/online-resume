@@ -77,7 +77,6 @@ publication:
   title: 学术发表
   items:
     - title: Three-party evolutionary game-based analysis and stability enhancement of improved PBFT consensus mechanism
-      authors: 梁诺靖 (及其他作者)
       conference: Cluster Computing (SCI JCR Q2)
       link:
       description: 已发表
@@ -89,7 +88,7 @@ award:
   items:
     - name: 第十五届蓝桥杯个人赛国赛（软件赛）三等奖
       awarder: 国家级
-      date: 2023
+      date: 2024
     - name: 第十四届全国大学生数学竞赛（数学A类）北京赛区二等奖
       awarder: 省部级
       date: 2022
