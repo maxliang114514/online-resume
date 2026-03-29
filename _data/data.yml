@@ -46,7 +46,7 @@ project:
   order: 3
   title: 项目经历
   items:
-    - name: CoT在训练和推理阶段的应用对于模型组合泛化的影响机制
+    - name: CoT在训练和推理阶段的应用对于大模型组合泛化的影响机制
       link:
       date: 2025.05 - 至今
       description: |
@@ -59,7 +59,7 @@ project:
       link:
       date: 2024.11 - 2025.05
       description: |
-        结合 Q-LoRA (参数量化) 与 VeRA (极低参数 Adapter) 的优势，设计了一种新型高效大语言模型微调方法。
+        结合 Q-LoRA (参数量化) 与 VeRA (极低参数 Adapter) 的优势，对高效大语言模型微调方法进行了改进。
         + 在 MMLU、GLUE 等主流测试集上性能与基线模型相当。
         + 显著优化了微调阶段的内存占用。
 
