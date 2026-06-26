@@ -4,13 +4,13 @@ meta:
 
 basic:
   name: 梁诺靖
-  title: AI / ML / LLM / CoT
+  title: AI / ML / LLM / CoT / RL
   avatar:
     show: true
     path: /assets/images/profile.png # 请将您的照片放入此路径或替换为您的链接
 
 contact:
-  location: 苏州/上海，中国
+  location: 苏州，中国
   email: 15089829449@163.com
   phone: +86-15089829449
   # 根据您的情况，可以添加 GitHub、LinkedIn 等链接
@@ -29,7 +29,7 @@ education:
       degree: 硕士（在读）
       description: |
         
-        + 研究方向：模型高效微调、机器学习理论、CoT(思维链)、组合泛化
+        + 研究方向：模型高效微调、机器学习理论、CoT(思维链)、组合泛化、强化学习
         + 具体内容：CoT在训练和推理阶段的应用对于大模型组合泛化的影响机制
 
     - institution: 北京航空航天大学数学科学学院
@@ -48,13 +48,21 @@ project:
   items:
     - name: CoT在训练和推理阶段的应用对于大模型的分布外泛化的影响机制研究
       link:
-      date: 2025.05 - 至今
+      date: 2025.05 - 2026.05
       description: |
         基于rademacher complexity等机器学习理论，分析CoT让模型实现分布外泛化的理论机制
         + 对于缺少数据的长链组合任务，通过单步数据及分布外短链数据，让LLM泛化到目标长链任务分布
         + 相较以往工作，建立了一套更完善的理论框架，给出了具体的泛化误差界，进行了相尽的实验设计和分析
         + 目前已投稿至机器学习国际顶会（正在同行评审中）
 
+    - name: CoT在RL设定下的理论机制分析
+      link:
+      date: 2026.05 - 至今
+      description: |
+        对于目前通过RL算法增强大模型长链推理能力的前沿研究（例如deepseek-R1)，尝试进行较为系统的理论分析
+        + 对于PPO/GRPO/RLVR/RLHF等强化学习方法进行了系统调研与学习
+        + 目前处于初步探索阶段，准备根据目前研究的痛点（例如推理路径单一化等）寻找切入点
+        
     - name: Q-VeRA 大模型高效微调设计
       link:
       date: 2024.11 - 2025.05
@@ -63,13 +71,9 @@ project:
         + 在 MMLU、GLUE 等主流测试集上性能与基线相当
         + 显著优化了微调阶段的内存占用
 
-    - name: “区块链+三方演化博弈”课题研究
-      link:
-      date: 2023.09 - 2024.09
-      description: |
-        研究并改进区块链共识协议 (如 PBFT) 的激励机制，以提升网络的安全性与稳定性。
-        + 成果已发表于 SCI 期刊《Cluster Computing》(JCR Q2)（文章标题：Three-party evolutionary game-based analysis and stability enhancement of improved PBFT consensus mechanism）
-        + 参与“区块链+博弈”讨论班 (邓小铁教授主持)，研讨自私挖矿攻击等课题
+
+
+    
 
 award:
   show: true
@@ -94,11 +98,11 @@ skill:
       item:
         - Python (主要)
         - C++
-        - 算法竞赛经验
+        - 算法竞赛
+        - Vibe coding
     - name: 专业基础
       item:
-        - 数学分析 / 高等代数
-        - 概率论 / 最优化与算法
+        - 数学学科基础
         - 入围阿里巴巴全球数学竞赛决赛
   # 方式二：若需单独列出技能，也可使用 items，但建议二选一保持简洁
   # items:
