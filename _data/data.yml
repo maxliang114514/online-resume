@@ -59,7 +59,7 @@ project:
       link:
       date: 2026.05 - 至今
       description: |
-        对于目前通过RL算法增强大模型长链推理能力的前沿研究（例如deepseek-R1)，致力于进行较为系统的理论分析
+        对RL算法增强大模型长链推理能力的前沿研究（例如deepseek-R1)，致力于进行较为系统的理论分析
         + 对于PPO/GRPO/RLVR/RLHF等强化学习方法进行了系统调研与分析，寻找缺乏理论解释的痛点
         + 目前处于初步探索阶段，准备根据目前研究的空白（例如推理路径单一化等）寻找切入点
         
@@ -70,30 +70,30 @@ project:
         结合Q-LoRA与VeRA的优势，对高效大语言模型微调方法进行了改进
         + 在 MMLU、GLUE 等主流测试集上性能与基线相当
         + 显著优化了微调阶段的内存占用
-
+        
+    - name: Webpliot网页生成智能体（agent）构建项目（Smiles机器学习国际暑期学校，项目导师：刘佳恒助理教授）
+      link:
+      date: 2026.07 - 2026.07
+      description: |
+        基于Webcompass这一网页生成任务的brenchmark，进行agent构建与设计的实践
+        + 设计了一个能自我管理“计划-执行-检测-修复”的全流程agent
+        + 在同样的LLM下（qwen3.7-plus），agent相较于模型直接生成在得分上提升超过20%，且耗时得到有效控制
+        
 
 
     
-
-award:
-  show: true
-  order: 4
-  title: 竞赛获奖
-  items:
-    - name: 第十五届蓝桥杯个人赛国赛（软件赛）三等奖
-      awarder: 国家级
-      date: 2024
-    - name: 第十四届全国大学生数学竞赛（数学A类）北京赛区二等奖
-      awarder: 省部级
-      date: 2022
 
 
 skill:
   show: true
   order: 5
-  title: 技能与素养
+  title: 获奖与技能素养
   description: |
   groups:
+      - name: 数学/信息学竞赛
+      item:
+        - 第十五届蓝桥杯个人赛国赛（软件赛）三等奖
+        - 第十四届全国大学生数学竞赛（数学A类）北京赛区二等奖
     - name: 编程与开发
       item:
         - Python (主要)
@@ -105,6 +105,8 @@ skill:
         - 数学学科基础
         - 机器学习理论分析（泛化理论）
         - 入围阿里巴巴全球数学竞赛决赛
+
+        
   # 方式二：若需单独列出技能，也可使用 items，但建议二选一保持简洁
   # items:
   #   - name: Python
