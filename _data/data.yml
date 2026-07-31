@@ -75,7 +75,7 @@ project:
       link:
       date: 2026.07 - 2026.07
       description: |
-        基于Webcompass这一网页生成任务的brenchmark，进行agent构建与设计的实践
+        基于Webcompass这一网页生成任务的benchmark，进行agent构建与设计的实践
         + 设计了一个能自我管理“计划-执行-检测-修复”的全流程agent
         + 在同样的LLM下（qwen3.7-plus），agent相较于模型直接生成在得分上提升超过20%，且耗时得到有效控制
         
