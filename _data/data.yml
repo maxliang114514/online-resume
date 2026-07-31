@@ -62,14 +62,14 @@ project:
       date: 2024.11 - 2025.05
       description: |
         结合Q-LoRA与VeRA的优势，对高效大语言模型微调方法进行了改进
-        + 在 MMLU、GLUE 等主流测试集上准确率与基线相当（**1%**以内）
+        + 在 **MMLU、GLUE** 等主流测试集上准确率与基线相当（**1%**以内）
         + 微调阶段的内存占用相较Q-LoRA与VeRA分别降低**20%**、**45%**
 
     - name: Webpliot网页生成智能体（agent）设计（Smiles机器学习国际暑期学校项目）
       link:
       date: 2026.07 - 2026.07
       description: |
-        基于Webcompass网页生成任务（benchmark）进行agent设计（项目导师：刘佳恒助理教授）
+        基于**Webcompass**网页生成任务（benchmark）进行agent设计（项目导师：刘佳恒助理教授）
         + 设计了一个能自我管理“计划-执行-检测-修复”的全流程agent
         + 相较模型直接生成在Webcompass上得分提升超过**20%**，且耗时得到有效控制（qwen3.7-plus）
         
