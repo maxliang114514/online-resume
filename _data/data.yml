@@ -12,7 +12,7 @@ basic:
 contact:
   location: 苏州，中国
   email: 15089829449@163.com
-  phone: +86-15089829449
+  phone: 15089829449
   wechat: 15089829449
   # 根据您的情况，可以添加 GitHub、LinkedIn 等链接
   # github: your-username
@@ -54,7 +54,7 @@ project:
       description: |
         基于rademacher complexity等机器学习理论，分析CoT让模型实现分布外泛化的理论机制
         + 证明CoT能仅依赖单步数据及分布外短链数据，让LLM泛化到缺少数据的目标长链组合任务分布
-        + 建立了一套更完善的理论框架，给出了$O(sqrt{T/n})$泛化误差界并进行了详尽的实验分析
+        + 建立了一套更完善的理论框架，给出了**O(sqrt(T/n))**泛化误差界并进行了详尽的实验分析
         + 目前已投稿至机器学习国际顶会（正在同行评审中）
         
     - name: Q-VeRA 大模型高效微调设计
@@ -62,8 +62,8 @@ project:
       date: 2024.11 - 2025.05
       description: |
         结合Q-LoRA与VeRA的优势，对高效大语言模型微调方法进行了改进
-        + 在 MMLU、GLUE 等主流测试集上准确率与基线相当（1%以内）
-        + 微调阶段的内存占用相较Q-LoRA与VeRA分别降低20%、45%
+        + 在 MMLU、GLUE 等主流测试集上准确率与基线相当（**1%**以内）
+        + 微调阶段的内存占用相较Q-LoRA与VeRA分别降低**20%**、**45%**
 
     - name: Webpliot网页生成智能体（agent）设计（Smiles机器学习国际暑期学校项目）
       link:
@@ -71,7 +71,7 @@ project:
       description: |
         基于Webcompass网页生成任务（benchmark）进行agent设计（项目导师：刘佳恒助理教授）
         + 设计了一个能自我管理“计划-执行-检测-修复”的全流程agent
-        + 相较模型直接生成在Webcompass上得分提升超过20%，且耗时得到有效控制（qwen3.7-plus）
+        + 相较模型直接生成在Webcompass上得分提升超过**20%**，且耗时得到有效控制（qwen3.7-plus）
         
     - name: CoT与强化学习结合的推理机制研究
       link:
