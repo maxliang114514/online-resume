@@ -79,11 +79,6 @@ project:
         + 设计了一个能自我管理“计划-执行-检测-修复”的全流程agent
         + 在同样的LLM下（qwen3.7-plus），agent相较于模型直接生成在得分上提升超过20%，且耗时得到有效控制
         
-
-
-    
-
-
 skill:
   show: true
   order: 5
