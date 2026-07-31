@@ -70,7 +70,14 @@ project:
         结合Q-LoRA与VeRA的优势，对高效大语言模型微调方法进行了改进
         + 在 MMLU、GLUE 等主流测试集上性能与基线相当
         + 显著优化了微调阶段的内存占用
-        
+
+    - name: Webpliot网页生成智能体（agent）构建项目（Smiles机器学习国际暑期学校，项目导师：刘佳恒助理教授）
+      link:
+      date: 2026.07 - 2026.07
+      description: |
+        基于Webcompass这一网页生成任务的brenchmark，进行agent构建与设计的实践
+        + 设计了一个能自我管理“计划-执行-检测-修复”的全流程agent
+        + 在同样的LLM下（qwen3.7-plus），agent相较于模型直接生成在得分上提升超过20%，且耗时得到有效控制
         
 skill:
   show: true
@@ -78,7 +85,7 @@ skill:
   title: 获奖与技能素养
   description: |
   groups:
-      - name: 数学/信息学竞赛
+      - name: 数学及信息学竞赛
       item:
         - 第十五届蓝桥杯个人赛国赛（软件赛）三等奖
         - 第十四届全国大学生数学竞赛（数学A类）北京赛区二等奖
