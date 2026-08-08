@@ -24,7 +24,7 @@ education:
   order: 1
   title: 教育经历
   items:
-    - institution: 南京大学智能科学与技术学院
+    - institution: 南京大学
       link:
       date: 2025.07 - 至今
       major: 机器学习与数据挖掘（导师：袁晓彤教授）
@@ -34,7 +34,7 @@ education:
         + 研究方向：大模型推理与对齐（CoT, RLVR）、机器学习理论、组合泛化
         + 目前已有一篇论文在投，当前研究兴趣为思维链、RL(RLVR)
 
-    - institution: 北京航空航天大学数学科学学院
+    - institution: 北京航空航天大学
       link:
       date: 2021.09 - 2025.06
       major: 信息安全（理科）
