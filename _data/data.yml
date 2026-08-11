@@ -27,12 +27,12 @@ education:
     - institution: 南京大学
       link:
       date: 2025.07 - 至今
-      major: 机器学习与数据挖掘（导师：袁晓彤教授）
-      degree: 硕士（在读）
+      major: 计算机科学与技术
+      degree: 硕士（在读，导师为袁晓彤教授）
       description: |
         
-        + 研究方向：大模型推理与对齐（CoT, RLVR）、机器学习理论、组合泛化
-        + 目前已有一篇论文在投，当前研究兴趣为思维链、RL(RLVR)
+        + 研究方向：大模型推理与对齐（CoT, RLVR）、机器学习理论、组合泛化、高维统计学习
+        + 目前已有一篇论文在投，当前研究兴趣为思维链、agent、强化学习
 
     - institution: 北京航空航天大学
       link:
