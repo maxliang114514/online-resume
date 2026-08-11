@@ -27,8 +27,8 @@ education:
     - institution: 南京大学
       link:
       date: 2025.07 - 至今
-      major: 计算机科学与技术
-      degree: 硕士（在读，导师为袁晓彤教授）
+      major: 计算机科学与技术（机器学习与数据挖掘）
+      degree: 硕士
       description: |
         
         + 研究方向：大模型推理与对齐（CoT, RLVR）、机器学习理论、组合泛化、高维统计学习
