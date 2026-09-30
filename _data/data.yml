@@ -31,6 +31,8 @@ education:
       degree: 硕士
       description: |
         + 研究方向：思维链、大模型推理、强化学习、统计学习理论、组合泛化
+        + + 科研成果：目前已有一篇论文获 NeurIPS 2026录用（标题：Understanding the Out-of-Distribution Generalization
+of Chain-of-Thought Reasoning in LLMs）
 
     - institution: 北京航空航天大学
       link:
