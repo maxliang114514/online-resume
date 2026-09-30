@@ -48,7 +48,7 @@ project:
   order: 3
   title: 项目经历
   items:
-    - name: 思维链（CoT）分布外组合泛化理论（**NeurIPS 2026**）
+    - name: 思维链（CoT）分布外组合泛化理论（NeurIPS 2026）
       link:
       date: 2025.05 - 2026.05
       description: |
