@@ -73,7 +73,7 @@ project:
         
     - name: LLM Agent 长程推理与强化学习理论
       link:
-      date: 2026.05 - 至今
+      date: 2026.08 - 至今
       description: |
         + 面向长程任务的组合爆炸与可靠完成难题，将数学证明智能体的分解、局部求解与验证机制推广至通用 Agent
         + 借鉴 Sonoda 系列工作，基于状态中心决策过程（State-Centric Decision Process，SDP）构建规划—执行—验证分析框架
