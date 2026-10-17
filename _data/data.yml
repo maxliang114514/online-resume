@@ -26,7 +26,7 @@ education:
       major: 计算机科学与技术（机器学习与数据挖掘）
       degree: 硕士
       description: |
-        + 科研成果：目前已有一篇论文获 NeurIPS 2026 录用（第一作者，标题：Understanding the Out-of-Distribution Generalization of Chain-of-Thought Reasoning in LLMs）
+        + 科研成果：第一作者论文获 NeurIPS 2026 录用（"Understanding the Out-of-Distribution Generalization of Chain-of-Thought Reasoning in LLMs"）
         + 研究方向：思维链、大模型推理、强化学习、统计学习理论、组合泛化
 
     - institution: 北京航空航天大学
@@ -35,7 +35,7 @@ education:
       major: 信息安全（理科）
       degree: 学士
       description: |
-        + 学习成绩：3.85/4.0 (加权平均分 92.45)，CET-4 640 ，CET-6 580
+        + 学习成绩：3.85/4.0（加权平均分 92.45），CET-4 640，CET-6 580
 
 project:
   show: true
@@ -46,39 +46,39 @@ project:
       link:
       date: 2025.05 - 至今
       description: |
-        + 基于 Rademacher complexity 分析 CoT 分布外泛化机制，证明仅依赖单步数据即可泛化到目标长链组合任务
-        + 建立了一套更完善的理论框架，给出了**O(sqrt(T/n))**泛化误差界并进行了详尽的实验分析
-        + 研究「基于当前状态逐步推理」的结构，CoT仅为其中特例，Agent逐步执行属同一结构
+        + 用 Rademacher complexity 分析 CoT 分布外泛化机制：单步数据即可泛化至长链组合任务
+        + 建立理论框架：给出 **O(√(T/n))** 泛化误差界并完成实验验证；研究「基于当前状态逐步推理」结构，CoT 仅其一例，Agent 逐步执行属同一结构
 
     - name: Q-VeRA 大模型高效微调设计
       link:
       date: 2024.11 - 2025.05
       description: |
-        结合Q-LoRA与VeRA的优势，对高效大语言模型微调方法进行了改进
-        + 在 **MMLU、GLUE** 等主流测试集上准确率与基线相当（**1%**以内）
-        + 微调阶段的内存占用相较Q-LoRA与VeRA分别降低**20%**、**45%**
+        + 结合 Q-LoRA 与 VeRA 的优势，对高效大语言模型微调方法进行了改进
+        + 在 **MMLU、GLUE** 等主流测试集上准确率与基线相当（**1%** 以内）
+        + 微调阶段的内存占用相较 Q-LoRA 与 VeRA 分别降低 **20%**、**45%**
 
-    - name: Webpilot网页生成智能体（agent）设计（Smiles机器学习国际暑期学校项目）
+    - name: Webpilot 网页生成智能体（Agent）设计（Smiles 机器学习国际暑期学校项目）
       link:
-      date: 2026.07 - 2026.07
+      date: 2026.07
       description: |
-        基于**Webcompass**网页生成任务（benchmark）进行agent设计（项目导师：刘佳恒助理教授）
-        + 设计了一个能自我管理“计划-执行-检测-修复”的全流程agent
-        + 相较模型直接生成在Webcompass上得分提升超过**20%**，且耗时得到有效控制（qwen3.7-plus）
+        + 基于 **Webcompass** 网页生成任务（benchmark）进行 Agent 设计（项目导师：刘佳恒助理教授）
+        + 设计了一个能自我管理"计划-执行-检测-修复"的全流程 Agent
+        + 相较模型直接生成在 Webcompass 上得分提升超过 **20%**，且耗时得到有效控制（qwen3.7-plus）
 
     - name: LLM Agent 长程推理与强化学习理论
       link:
       date: 2026.08 - 至今
       description: |
-        + 面向长程任务的组合爆炸与可靠完成难题，将数学证明智能体的分解、局部求解与验证机制推广至通用 Agent
-        + 借鉴 Sonoda 系列工作，基于状态中心决策过程（State-Centric Decision Process，SDP）构建规划—执行—验证分析框架
-        + 推导结构化任务下的条件成功率界，分析局部采样缓解长链执行成本的条件
+        + 面向长程任务的组合爆炸与可靠性难题，将数学证明智能体的分解—求解—验证机制推广至通用 Agent
+        + 借鉴 Sonoda 系列工作，基于状态中心决策过程（SDP）构建规划—执行—验证分析框架
+        + 推导结构化任务下的条件性成功率界，分析局部采样缓解长链执行成本的条件
 
 skill:
   show: true
   order: 5
   title: 获奖与技能素养
   description: |
+    + **可实习时间：2026 年 12 月起，可保证 6 个月以上，每周 3 天以上（可远程/兼职）**
   groups:
     - name: 数学及信息学竞赛
       item:
@@ -86,7 +86,7 @@ skill:
         - 入围阿里巴巴全球数学竞赛决赛
     - name: 编程与开发
       item:
-        - Python (主要)
+        - Python（主要）
         - C++
         - 算法竞赛
         - Vibe coding
