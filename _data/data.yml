@@ -4,7 +4,7 @@ meta:
 
 basic:
   name: 梁诺靖
-  title: AI / ML / LLM / CoT / RL
+  title: AI / ML / LLM / CoT / RL　·　可立即入职，6个月+
   avatar:
     show: true
     path: /assets/images/profile.png
@@ -69,7 +69,7 @@ project:
       link:
       date: 2026.08 - 至今
       description: |
-        + 面向长程任务的组合爆炸与可靠性难题，将数学证明智能体的分解—求解—验证机制推广至通用 Agent
+        + 面向长程任务的组合爆炸与可靠性难题，将数学智能体的分解—求解—验证机制推广至通用 Agent
         + 借鉴 Sonoda 系列工作，基于状态中心决策过程（SDP）构建规划—执行—验证分析框架
         + 推导结构化任务下的条件性成功率界，分析局部采样缓解长链执行成本的条件
 
@@ -78,11 +78,11 @@ skill:
   order: 5
   title: 获奖与技能素养
   description: |
-    + **可实习时间：2026 年 12 月起，可保证 6 个月以上，每周 3 天以上（可远程/兼职）**
   groups:
     - name: 数学及信息学竞赛
       item:
-        - 蓝桥杯国赛（软件赛）三等奖
+        - 蓝桥杯国赛三等奖
+        - 全国大学生数学竞赛省级二等奖
         - 入围阿里巴巴全球数学竞赛决赛
     - name: 编程与开发
       item:
