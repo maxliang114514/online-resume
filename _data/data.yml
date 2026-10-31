@@ -4,7 +4,7 @@ meta:
 
 basic:
   name: 梁诺靖
-  title: AI / ML / LLM / CoT / RL　·　可立即入职，6个月+
+  title: 2028 届硕士｜求职意向：大模型算法 / LLM 研究实习生｜可立即入职，6 个月+
   avatar:
     show: true
     path: /assets/images/profile.png
@@ -20,16 +20,16 @@ education:
   order: 1
   title: 教育经历
   items:
-    - institution: 南京大学
+    - institution: 南京大学 · 智能科学与技术学院
       link:
-      date: 2025.07 - 至今
+      date: 2025.07 - 2028.06（预计）
       major: 计算机科学与技术（机器学习与数据挖掘）
       degree: 硕士
       description: |
-        + 科研成果：第一作者论文获 NeurIPS 2026 录用（"Understanding the Out-of-Distribution Generalization of Chain-of-Thought Reasoning in LLMs"）
+        + 第一作者论文获 NeurIPS 2026 录用："Understanding the Out-of-Distribution Generalization of Chain-of-Thought Reasoning in LLMs"
         + 研究方向：思维链、大模型推理、强化学习、统计学习理论、组合泛化
 
-    - institution: 北京航空航天大学
+    - institution: 北京航空航天大学 · 数学科学学院
       link:
       date: 2021.09 - 2025.06
       major: 信息安全（理科）
@@ -42,31 +42,31 @@ project:
   order: 3
   title: 项目经历
   items:
-    - name: 思维链（CoT）分布外组合泛化理论（NeurIPS 2026 Poster）
+    - name: 思维链分布外组合泛化理论（NeurIPS 2026 一作｜PyTorch·理论分析）
       link:
       date: 2025.05 - 至今
       description: |
         + 用 Rademacher complexity 分析 CoT 分布外泛化机制：单步数据即可泛化至长链组合任务
-        + 建立理论框架：给出 **O(√(T/n))** 泛化误差界并完成实验验证
+        + 给出 O(√(T/n)) 泛化误差界，并在 Qwen3-4B 与 Llama2-7B 上完成实验验证（3 seeds，均值±标准差）
         + 研究「基于当前状态逐步推理」结构，CoT 仅其一例，Agent 逐步执行属同一结构
 
-    - name: Q-VeRA 大模型高效微调设计
+    - name: Q-VeRA 大模型高效微调设计（PyTorch·LoRA·量化）
       link:
       date: 2024.11 - 2025.05
       description: |
         + 结合 Q-LoRA 与 VeRA 的优势，对高效大语言模型微调方法进行了改进
-        + 在 **MMLU、GLUE** 等主流测试集上准确率与基线相当（**1%** 以内）
-        + 微调阶段的内存占用相较 Q-LoRA 与 VeRA 分别降低 **20%**、**45%**
+        + 在 MMLU、GLUE 等主流测试集上准确率与基线相当（1% 以内）
+        + 微调阶段的内存占用相较 Q-LoRA 与 VeRA 分别降低 20%、45%
 
-    - name: Webpilot 网页生成智能体（Agent）设计（Smiles 机器学习国际暑期学校项目）
+    - name: Webpilot 网页生成智能体（Agent）设计（Python·Agent·Benchmark）
       link:
       date: 2026.07
       description: |
-        + 基于 **Webcompass** 网页生成任务（benchmark）进行 Agent 设计（项目导师：刘佳恒助理教授）
+        + 基于 WebCompass 网页生成任务（benchmark）进行 Agent 设计（项目导师：刘佳恒助理教授）
         + 设计了一个能自我管理"计划-执行-检测-修复"的全流程 Agent
-        + 相较模型直接生成在 Webcompass 上得分提升超过 **20%**，且耗时得到有效控制（qwen3.7-plus）
+        + 相较模型直接生成在 WebCompass 上得分提升超过 20%，且耗时得到有效控制（qwen3.7-plus）
 
-    - name: LLM Agent 长程推理与强化学习理论
+    - name: LLM Agent 长程推理与强化学习理论（理论分析·RL·SDP）
       link:
       date: 2026.08 - 至今
       description: |
@@ -77,21 +77,22 @@ project:
 skill:
   show: true
   order: 5
-  title: 获奖与技能素养
+  title: 专业技能与荣誉
   description: |
   groups:
-    - name: 数学及信息学竞赛
-      item:
-        - 蓝桥杯国三
-        - 全国大学生数学竞赛省二
-        - 入围阿里巴巴数学竞赛决赛
-    - name: 编程与开发
+    - name: 编程与工具
       item:
         - Python（主要）
         - C++
-        - 算法竞赛
-        - Vibe coding
-    - name: 专业基础
+        - PyTorch
+        - Git / Linux
+    - name: 理论与方法
       item:
-        - 数学学科基础
-        - 机器学习理论分析（泛化理论）
+        - Rademacher 复杂度
+        - 泛化误差分解
+        - 消融实验与多 seed 复现
+    - name: 竞赛获奖
+      item:
+        - 阿里巴巴全球数学竞赛 决赛入围
+        - 全国大学生数学竞赛（数学 A 类）省级二等奖
+        - 蓝桥杯国赛（软件赛）三等奖
