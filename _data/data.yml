@@ -63,7 +63,7 @@ project:
       date: 2026.07
       description: |
         + 基于 WebCompass 网页生成任务（benchmark）进行 Agent 设计（项目导师：刘佳恒助理教授）
-        + 在 Qwen、Claude 等多个大模型 API 上设计并评测能自我管理"计划-执行-检测-修复"的全流程 Agent
+        + 在 Qwen、Kimi 等多个大模型 API 上设计并评测能自我管理"计划-执行-检测-修复"的全流程 Agent
         + 相较模型直接生成，WebCompass 得分提升超过 20%，且耗时得到有效控制
 
     - name: LLM Agent 长程推理与强化学习理论（理论分析·RL·Agent）
