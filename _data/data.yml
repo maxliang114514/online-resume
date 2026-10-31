@@ -4,7 +4,7 @@ meta:
 
 basic:
   name: 梁诺靖
-  title: 2028 届硕士｜求职意向：大模型算法 / NLP 算法 / Agent 方向实习｜可立即入职，6 个月+
+  title: 2028 届硕士｜求职意向：大模型算法 / Agent 算法 / 机器学习研究实习｜可立即入职，6 个月+
   avatar:
     show: true
     path: /assets/images/profile.png
@@ -55,18 +55,18 @@ project:
       date: 2024.11 - 2025.05
       description: |
         + 结合 Q-LoRA 与 VeRA 的优势，对高效大语言模型微调方法进行了改进
-        + 在 MMLU、GLUE 等主流测试集上准确率与基线相当（1% 以内）
-        + 微调阶段的内存占用相较 Q-LoRA 与 VeRA 分别降低 20%、45%
+        + 基于Llama2-7B等模型，在 MMLU、GLUE 等主流测试集上准确率与基线相当（1% 以内）
+        + 微调阶段的内存占用相较 Q-LoRA 与 VeRA 方法分别降低 20%、45%
 
-    - name: Webpilot 网页生成智能体（Agent）设计（Python·Agent·Benchmark）
+    - name: Webpilot 网页生成智能体（Agent）设计（Python·Agent·多模型评测）
       link:
       date: 2026.07
       description: |
         + 基于 WebCompass 网页生成任务（benchmark）进行 Agent 设计（项目导师：刘佳恒助理教授）
-        + 设计了一个能自我管理"计划-执行-检测-修复"的全流程 Agent
-        + 相较模型直接生成在 WebCompass 上得分提升超过 20%，且耗时得到有效控制（qwen3.7-plus）
+        + 在 Qwen、Claude 等多个大模型 API 上设计并评测能自我管理"计划-执行-检测-修复"的全流程 Agent
+        + 相较模型直接生成，WebCompass 得分提升超过 20%，且耗时得到有效控制
 
-    - name: LLM Agent 长程推理与强化学习理论（理论分析·RL·SDP）
+    - name: LLM Agent 长程推理与强化学习理论（理论分析·RL·Agent）
       link:
       date: 2026.08 - 至今
       description: |
