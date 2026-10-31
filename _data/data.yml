@@ -78,7 +78,6 @@ skill:
   show: true
   order: 5
   title: 专业技能与荣誉
-  description: |
   groups:
     - name: 编程与工具
       item:
