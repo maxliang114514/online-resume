@@ -46,8 +46,8 @@ project:
       link: https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=12357&context=sis_research
       date: 2025.05 - 至今
       description: |
-        + 用 Rademacher complexity 分析 CoT 分布外泛化机制：单步数据即可泛化至长链组合任务，给出 O(√(T/n)) 误差界与匹配下界
-        + 自建 Atom-Task 数据集：设计单步与多步共 4 种训练组合，用于分离"单步数据"对长链泛化的贡献，在 Qwen3-4B 与 Llama2-7B 上验证，3 seeds 重复并报告均值±标准差（https://github.com/maxliang114514/CoT-OOD）
+        + 将大模型推理行为拆解为逐个步骤输出，用 Rademacher complexity 分析 CoT 分布外泛化机制：单步数据即可泛化至长链组合任务，给出 O(√(T/n)) 误差界与匹配下界
+        + 自建 Atom-Task 数据集：设计单步与多步4种训练组合，用于分离"单步数据"对长链泛化的贡献，在Qwen3-4B、Llama2-7B验证，3seeds重复并报告均值±标准差（https://github.com/maxliang114514/CoT-OOD）
         + 研究的是「基于当前状态逐步推理」结构，CoT 仅其一例，Agent 逐步执行属同一结构
     - name: Q-VeRA 大模型高效微调设计（PyTorch·LoRA·量化）
       link:
