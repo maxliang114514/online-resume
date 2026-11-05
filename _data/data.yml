@@ -26,7 +26,7 @@ education:
       major: 计算机科学与技术（机器学习与数据挖掘）
       degree: 硕士
       description: |
-        + NeurIPS 2026 独立一作：[Understanding the Out-of-Distribution Generalization of Chain-of-Thought Reasoning in LLMs](https://arxiv.org/abs/2611.06438)
+        + NeurIPS 2026 独立一作：Understanding the Out-of-Distribution Generalization of Chain-of-Thought Reasoning in LLMs(论文链接:https://arxiv.org/abs/2611.06438)
         + 研究方向：思维链、大模型推理、强化学习、统计学习理论、组合泛化
         
     - institution: 北京航空航天大学 · 数学科学学院
@@ -43,11 +43,11 @@ project:
   title: 项目经历
   items:
     - name: 思维链分布外组合泛化理论（NeurIPS 2026 一作｜PyTorch·理论分析）
-      link: https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=12357&context=sis_research
+      link: 
       date: 2025.05 - 至今
       description: |
         + 将大模型推理行为拆解为逐个步骤输出，用 Rademacher complexity 分析 CoT 分布外泛化机制：单步数据即可泛化至长链组合任务，给出 O(√(T/n)) 误差界与匹配下界
-        + 自建 Atom-Task 数据集：设计单步与多步4种训练组合，用于分离"单步数据"对长链泛化的贡献，在Qwen3-4B、Llama2-7B验证，3seeds重复并报告均值±标准差（https://github.com/maxliang114514/CoT-OOD）
+        + 自建 Atom-Task 数据集：设计单步与多步4种训练组合，用于分离"单步数据"对长链泛化的贡献，在Qwen3-4B、Llama2-7B验证，3seeds重复并报告均值±标准差（代码：https://github.com/maxliang114514/CoT-OOD）
         + 研究的是「基于当前状态逐步推理」结构，CoT 仅其一例，Agent 逐步执行属同一结构
     - name: Q-VeRA 大模型高效微调设计（PyTorch·LoRA·量化）
       link:
