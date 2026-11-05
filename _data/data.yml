@@ -26,9 +26,9 @@ education:
       major: 计算机科学与技术（机器学习与数据挖掘）
       degree: 硕士
       description: |
-        + NeurIPS2026 独立一作："Understanding the Out-of-Distribution Generalization of Chain-of-Thought Reasoning in LLMs"
+        + NeurIPS 2026 独立一作：[Understanding the Out-of-Distribution Generalization of Chain-of-Thought Reasoning in LLMs](https://arxiv.org/abs/2611.06438)
         + 研究方向：思维链、大模型推理、强化学习、统计学习理论、组合泛化
-
+        
     - institution: 北京航空航天大学 · 数学科学学院
       link:
       date: 2021.09 - 2025.06
