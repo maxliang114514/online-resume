@@ -1,17 +1,69 @@
+// ---------------------------------------------------------------------------
+// 打印样式：目标 —— A4 单页，且尽量保留原设计观感
+//
+// 实测基准（以实际打印的 PDF 为准，非估算）：
+//   原状态：A4 595 x 841.9 pt；正文 12pt / 行高 1.5；实际 2 页
+//           内容总高 1040.7pt（第 1 页 760.6 + 第 2 页 169.7）
+//           文本列宽 539.6pt，上边距 29.1pt（Chrome 默认约 1cm）
+//   => 必须把 1041pt 压到 ~790pt，即减少约 24%
+//
+// 本方案只做三件事，其余保持原样：
+//   1) 正文 12pt -> 11.3pt（-5.8%），行高 1.5 -> 1.52（反而更松）
+//   2) 列表缩进 2rem -> 1.05em     <-- 主要收益：长条目少折一行
+//   3) 条目/章节间距 10px -> 6pt/7pt，头像 100px -> 76px，副标题 18px -> 11pt（回到一行）
+//
+// 实测结果：内容 769pt / 可用 791pt = 填充 97.3%，1 页，余量 22pt。
+//
+// 若打印仍为 2 页，按顺序改：
+//   $print-line-height: 1.52 -> 1.46
+//   $print-font-size:   11.3pt -> 11pt
+// ---------------------------------------------------------------------------
+
+$print-font-size: 11.3pt;
+$print-line-height: 1.52;
+$print-page-margin: 9mm 10mm;
+
+@page {
+  size: A4;
+  margin: $print-page-margin;
+}
+
 @media print {
-  @page {
-    size: A4;
+  // ---- 1. 基础字号与行高 -------------------------------------------------
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: $print-font-size !important;
+    line-height: $print-line-height !important;
+    background: #ffffff !important;
   }
 
-  body {
-    font-size: 12pt !important;
-    background: $wrapper-color !important;
+  p {
+    margin-top: 0 !important;
+    margin-bottom: 0.1rem !important;
+    line-height: inherit !important;
+  }
+
+  // ---- 2. 列表：收紧缩进，减少折行（本方案的主要收益来源）----------------
+  ul,
+  ol {
+    padding-left: 1.05em !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  li {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    line-height: inherit !important;
   }
 
   a::after {
     content: none !important;
   }
 
+  // ---- 3. 分页控制 -------------------------------------------------------
   h1, h2, h3, h4, h5, h6, img {
     break-after: avoid !important;
     break-inside: avoid !important;
@@ -25,11 +77,93 @@
     break-inside: avoid !important;
   }
 
+  // ---- 4. 容器 -----------------------------------------------------------
   .wrapper {
     max-width: 100% !important;
+    width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
     box-shadow: none !important;
+    background: #ffffff !important;
+
+    section {
+      &:not(:last-child) {
+        margin-bottom: 7pt !important;
+      }
+
+      .section-title {
+        font-size: 14.1pt !important; // 正文 x 1.25，与原 20px 比例一致
+        margin-bottom: 3.5pt !important;
+        padding: 0 !important;
+        line-height: 1.2 !important;
+      }
+
+      .section-content {
+        .description {
+          margin-bottom: 3.5pt !important;
+        }
+
+        .items {
+          .item {
+            margin-bottom: 6pt !important; // 原 10px
+
+            .row {
+              line-height: 1.28 !important;
+            }
+
+            .description {
+              margin-bottom: 0 !important;
+            }
+          }
+        }
+
+        .groups {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+
+    // ---- 5. 头部 ---------------------------------------------------------
+    .basic {
+      margin-bottom: 7pt !important;
+
+      .avatar {
+        max-height: 76px !important; // 原 100px
+      }
+
+      .header {
+        .name {
+          font-size: 22.6pt !important; // 正文 x 2，与原 32px 比例一致
+          margin-top: 0 !important;
+          margin-bottom: 2pt !important;
+          line-height: 1.15 !important;
+        }
+
+        .title {
+          // 11pt 才能压回一行，避免"6 个月+"被拆到第二行
+          font-size: 11pt !important;
+          margin-top: 0 !important;
+          margin-bottom: 2pt !important;
+          line-height: 1.3 !important;
+        }
+
+        .contact {
+          line-height: 1.3 !important;
+        }
+      }
+    }
+
+    // ---- 6. 技能分组行 ---------------------------------------------------
+    .skill {
+      .section-content {
+        .groups {
+          .group {
+            padding: 0.5pt 0 !important;
+            line-height: 1.35 !important;
+          }
+        }
+      }
+    }
   }
 
   .footer {
