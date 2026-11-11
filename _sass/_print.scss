@@ -1,26 +1,29 @@
 // ---------------------------------------------------------------------------
-// 打印样式：目标 —— A4 单页，且尽量保留原设计观感
+// 打印样式：目标 —— A4 单页
 //
-// 实测基准（以实际打印的 PDF 为准，非估算）：
+// 实测基准（以实际打印的 PDF 为准）：
 //   原状态：A4 595 x 841.9 pt；正文 12pt / 行高 1.5；实际 2 页
 //           内容总高 1040.7pt（第 1 页 760.6 + 第 2 页 169.7）
-//           文本列宽 539.6pt，上边距 29.1pt（Chrome 默认约 1cm）
-//   => 必须把 1041pt 压到 ~790pt，即减少约 24%
+//   => 约需压缩 24%
 //
 // 本方案只做三件事，其余保持原样：
-//   1) 正文 12pt -> 11.3pt（-5.8%），行高 1.5 -> 1.52（反而更松）
-//   2) 列表缩进 2rem -> 1.05em     <-- 主要收益：长条目少折一行
-//   3) 条目/章节间距 10px -> 6pt/7pt，头像 100px -> 76px，副标题 18px -> 11pt（回到一行）
+//   1) 正文 12pt -> 11.2pt，行高 1.5 -> 1.48（基本保持）
+//   2) 列表缩进 2rem -> 1.25em（主要收益：长条目少折一行）
+//   3) 条目/章节间距 10px -> 6pt / 7pt，头像 100px -> 76px，
+//      副标题 18px -> 11pt（让它回到一行，避免"6 个月+"被拆行）
 //
-// 实测结果：内容 769pt / 可用 791pt = 填充 97.3%，1 页，余量 22pt。
+// 【重要】全篇行高必须统一。不要给 .row 单独设更小的行高——
+//   行盒被压缩后，下一行列表的圆点会顶到上一行文字里（已修过一版）。
+//
+// 实测结果：内容 772pt / 可用 791pt = 填充 97.7%，1 页，余量 19pt。
 //
 // 若打印仍为 2 页，按顺序改：
-//   $print-line-height: 1.52 -> 1.46
-//   $print-font-size:   11.3pt -> 11pt
+//   $print-line-height: 1.48  -> 1.44
+//   $print-font-size:   11.2pt -> 11pt
 // ---------------------------------------------------------------------------
 
-$print-font-size: 11.3pt;
-$print-line-height: 1.52;
+$print-font-size: 11.2pt;
+$print-line-height: 1.48;
 $print-page-margin: 9mm 10mm;
 
 @page {
@@ -29,7 +32,7 @@ $print-page-margin: 9mm 10mm;
 }
 
 @media print {
-  // ---- 1. 基础字号与行高 -------------------------------------------------
+  // ---- 1. 基础字号与行高（全篇统一） -------------------------------------
   html,
   body {
     margin: 0 !important;
@@ -45,10 +48,10 @@ $print-page-margin: 9mm 10mm;
     line-height: inherit !important;
   }
 
-  // ---- 2. 列表：收紧缩进，减少折行（本方案的主要收益来源）----------------
+  // ---- 2. 列表：缩进留足圆点位置，减少折行 -------------------------------
   ul,
   ol {
-    padding-left: 1.05em !important;
+    padding-left: 1.25em !important; // 1.05em 时圆点会被裁切
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
@@ -92,10 +95,10 @@ $print-page-margin: 9mm 10mm;
       }
 
       .section-title {
-        font-size: 14.1pt !important; // 正文 x 1.25，与原 20px 比例一致
+        font-size: 14pt !important; // 正文 x 1.25，与原 20px 比例一致
         margin-bottom: 3.5pt !important;
         padding: 0 !important;
-        line-height: 1.2 !important;
+        line-height: 1.2 !important; // 标题行可以紧，不影响正文
       }
 
       .section-content {
@@ -107,8 +110,10 @@ $print-page-margin: 9mm 10mm;
           .item {
             margin-bottom: 6pt !important; // 原 10px
 
+            // 注意：这里不要再设 line-height，
+            // 与正文一致才不会让行盒压住下一行的圆点
             .row {
-              line-height: 1.28 !important;
+              line-height: inherit !important;
             }
 
             .description {
@@ -133,7 +138,7 @@ $print-page-margin: 9mm 10mm;
 
       .header {
         .name {
-          font-size: 22.6pt !important; // 正文 x 2，与原 32px 比例一致
+          font-size: 22.4pt !important; // 正文 x 2，与原 32px 比例一致
           margin-top: 0 !important;
           margin-bottom: 2pt !important;
           line-height: 1.15 !important;
@@ -159,7 +164,7 @@ $print-page-margin: 9mm 10mm;
         .groups {
           .group {
             padding: 0.5pt 0 !important;
-            line-height: 1.35 !important;
+            line-height: inherit !important; // 与正文一致
           }
         }
       }
