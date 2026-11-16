@@ -42,7 +42,7 @@ project:
   order: 3
   title: 项目经历
   items:
-    - name: 思维链分布外组合泛化理论（NeurIPS 2026 一作｜PyTorch·理论分析·vLLM·LoRA）
+    - name: 思维链分布外组合泛化理论（NeurIPS 2026 一作｜Learing Theory/PyTorch/vLLM/LoRA）
       link: https://arxiv.org/abs/2611.06438
       date: 2025.05 - 至今
       description: |
@@ -51,7 +51,7 @@ project:
         + 论文与代码：[arxiv.org/abs/2611.06438](https://arxiv.org/abs/2611.06438) ｜ [github.com/maxliang114514/CoT-OOD](https://github.com/maxliang114514/CoT-OOD)
         + 研究的是「基于当前状态逐步推理」结构，CoT 仅其一例，Agent 逐步执行属同一结构
 
-    - name: Q-VeRA 大模型高效微调设计（PyTorch·LoRA·量化）
+    - name: Q-VeRA 大模型高效微调设计（PyTorch/LoRA/量化）
       link:
       date: 2024.11 - 2025.05
       description: |
@@ -59,7 +59,7 @@ project:
         + 基于 Llama2-7B 等模型，在 MMLU、GLUE 等主流测试集上准确率与基线相当（1% 以内）
         + 微调阶段的内存占用相较 Q-LoRA 与 VeRA 方法分别降低 20%、45%
 
-    - name: Webpilot 网页生成智能体（Agent）设计（Python·Agent·多模型评测）
+    - name: Webpilot 网页生成智能体（Agent）设计（Python/Agent/多模型评测）
       link:
       date: 2026.07
       description: |
@@ -67,7 +67,7 @@ project:
         + 以 Playwright 渲染后的整页与视口截图作为视觉反馈，驱动 VLM 按可运行性 / 规格实现度 / 设计质量三维度评分；最多3轮的修复阶段输出 search/replace 增量补丁，只改失败项而非重生成整个项目
         + 相较单次生成，文本/图像综合得分由 0.688/0.837 升至 0.905/0.924（各 10 任务），单任务 3–9 次 API 调用
 
-    - name: 基于步骤与模块分解的 Agent 长程推理理论（理论分析·Agent·GRPO）
+    - name: 基于步骤与模块分解的 Agent 长程推理理论（Learing Theory/Agent/GRPO）
       link:
       date: 2026.08 - 至今
       description: |
