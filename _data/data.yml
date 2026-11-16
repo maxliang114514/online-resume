@@ -55,7 +55,7 @@ project:
       link:
       date: 2024.11 - 2025.05
       description: |
-        + 结合 Q-LoRA 与 VeRA 的优势，对高效大语言模型微调方法进行了改进
+        + 结合 Q-LoRA 与 VeRA 的优势，对LLM高效微调方法进行了改进设计
         + 基于 Llama2-7B 等模型，在 MMLU、GLUE 等主流测试集上准确率与基线相当（1% 以内）
         + 微调阶段的内存占用相较 Q-LoRA 与 VeRA 方法分别降低 20%、45%
 
