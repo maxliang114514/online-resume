@@ -55,7 +55,7 @@ project:
       link:
       date: 2024.11 - 2025.05
       description: |
-        + 将 4-bit NF4 量化与 VeRA 结合：共享冻结随机投影 + 逐层对角缩放，可训练参数由 LoRA 的 r(d+k) 降至 d+k；采用存储/计算分离，反向只回传适配器梯度
+        + 将 QLoRA 的 4-bit NF4 量化与 VeRA 的冻结共享投影结合为 Q-VeRA，完成梯度推导与实现，同等rank下可训练参数为 LoRA 的 10%以下
         + 在 Llama2-7B/13B 上 MMLU（5-shot）与 GLUE 准确率与 Q-LoRA、VeRA 相当（1% 以内）
         + 微调峰值显存相较 Q-LoRA、VeRA 分别降低 20%、45%
 
