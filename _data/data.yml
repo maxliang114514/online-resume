@@ -92,7 +92,6 @@ skill:
         - Rademacher 复杂度
         - 泛化误差分解
         - 消融实验与多 seed 复现
-        - 微调方法（LoRA·QLoRA·VeRA）
     - name: 竞赛获奖
       item:
         - 阿里巴巴全球数学竞赛决赛入围
