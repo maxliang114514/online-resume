@@ -55,7 +55,7 @@ project:
       link:
       date: 2024.11 - 2025.05
       description: |
-        + 以 4-bit 量化模型为基座、用 VeRA 替换 LoRA 作为适配器构建 Q-VeRA，同等 rank 下可训练参数为 LoRA 的 1/8
+        + 以 4-bit 量化模型为基座、用 VeRA 替换 LoRA 构建 Q-VeRA，同等 rank 下可训练参数为 LoRA 的 1/8
         + 在 Llama2-7B/13B 上 MMLU（5-shot）与 GLUE 准确率与 Q-LoRA、VeRA 相当（1% 以内）
         + 在固定 batch 与 rank 下测峰值显存，相较 Q-LoRA、VeRA 分别降低 20% 与 45%
 
